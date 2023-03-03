@@ -1,3 +1,4 @@
+/* Generales */
 :root {
   --bg_page: #ffffff;
   --color_secudary:#c7c7c7;
@@ -18,6 +19,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.inactive {
+  opacity: 0;
+}
+/* Estilos */
 .container {
   display: grid;
   width: 100%;
@@ -161,11 +166,16 @@ body {
   color: var(--color_secudary);
 }
 .desktop-menu {
+  position: absolute;
+  background: var(--bg_page);
+  top: 58px;
+  right: 50px;
   width: 100px;
   height: auto;
   border-radius: 6px;
   padding: 20px 20px 0px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: .4s;
 }
 .desktop-menu__list {
   list-style: none;
@@ -320,6 +330,8 @@ body {
 }
 .nav__email {
   font-size: var(--sm);
+  cursor: pointer;
+  user-select: none;
 }
 .nav__link {
   text-decoration: none;
@@ -334,8 +346,6 @@ body {
 }
 .nav__cart {
   display: flex;
-}
-.navbar__cart {
   position: relative;
 }
 .nav__add {
@@ -346,8 +356,8 @@ body {
   font-size: var(--sm);
   font-weight: bold;
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: -6px;
+  right: -3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,7 +466,4 @@ body {
   .product-details {
     width: 100%;
   }
-}
-.ejemplo {
-  margin: 24px 0 0;
 }
