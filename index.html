@@ -100,7 +100,7 @@
     </nav>
 
     <!-- Aside carrito de compras -->
-    <aside class="product-details inactive">
+    <aside id="cartContainer" class="inactive">
       <div class="cart-title">
         <img class="arrow-title" src="icons/flechita.svg" alt="Arrow">
         <p class="text__title">Carrito de compras</p>
@@ -145,6 +145,22 @@
 
       </div>
     </aside>
+
+    <!-- Aside detalle del producto -->
+
+    <aside id="productDetail" class="inactive">
+      <img class="product-img" src="https://cdn.pixabay.com/photo/2016/04/07/06/53/bmw-1313343_1280.jpg" alt="Motocicleta">
+      <img class="product-close" src="icons/icon_close.png" alt="Close">
+      <div class="product-info">
+        <p class="product-info-price">$ 130.00</p>
+        <p class="product-info-name">Motocicleta</p>
+        <p class="product-info-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim saepe placeat nemo atque nesciunt distinctio consequatur accusamus, voluptatum natus delectus sapiente, officia, nihil iusto adipisci aliquam voluptatibus? Quos, aspernatur odio.
+        </p>
+        <button class="button product-btn"><img src="icons/bt_add_to_cart.svg" alt="add to cart">Agregar al carrito</button>
+      </div>
+    </aside>
+
 
     <!-- Productos -->
     <section class="main-container">

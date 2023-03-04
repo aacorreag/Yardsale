@@ -11,7 +11,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 //variables menu carrito de compras
 
 const cartIcon = document.querySelector('.nav__cart');
-const asideCart = document.querySelector('.product-details');
+const asideCart = document.querySelector('#cartContainer');
 
 //variables container de las cards
 const cardsConstainer = document.querySelector('.card__container')
@@ -54,34 +54,59 @@ const productList = []; // creamos un array vacio
 // Lista de productos a agregar al array 
 
 productList.push({ // agrega producto al array vacio 
-  name: 'redShirt',
+  name: 'Camisa Roja',
   price: '20',
-  img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  img: 'https://images.pexels.com/photos/1187852/pexels-photo-1187852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 productList.push({ 
-  name: 'blackShirt',
+  name: 'Camiseta Negra',
   price: '20',
-  img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  img: 'https://images.pexels.com/photos/1267343/pexels-photo-1267343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 productList.push({ 
-  name: 'earphones',
-  price: '5',
-  img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  name: 'Audifonos',
+  price: '15',
+  img: 'https://images.pexels.com/photos/4526396/pexels-photo-4526396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 productList.push({ 
   name: 'smartphone',
   price: '350',
-  img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  img: 'https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 productList.push({ 
   name: 'mueble',
   price: '300',
-  img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  img: 'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 productList.push({ 
-  name: 'muebleOut',
+  name: 'Comedor',
   price: '200',
-  img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  img: 'https://images.pexels.com/photos/3935311/pexels-photo-3935311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+});
+productList.push({ 
+  name: 'Carro de Juguete',
+  price: '30',
+  img: 'https://images.pexels.com/photos/35619/capri-ford-oldtimer-automotive.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+});
+productList.push({ 
+  name: 'Dinosaurio de juguete',
+  price: '5',
+  img: 'https://images.pexels.com/photos/13825222/pexels-photo-13825222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+});
+productList.push({ 
+  name: 'Ipad',
+  price: '400',
+  img: 'https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+});
+productList.push({ 
+  name: 'Control XBOX',
+  price: '50',
+  img: 'https://images.pexels.com/photos/12718985/pexels-photo-12718985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+});
+productList.push({ 
+  name: 'Gorra LA',
+  price: '15',
+  img: 'https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 
 
