@@ -135,9 +135,10 @@ body {
 }
 .card__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
-  gap: 25px;
   place-content: center;
+  grid-template-columns: repeat(auto-fill, 240px);
+  margin-top: 20px;
+  gap: 25px;
 }
 .card__product {
   display: grid;
@@ -165,6 +166,10 @@ body {
   margin: 0;
   color: var(--color_secudary);
 }
+.card__icon {
+  margin: 0;
+  cursor: pointer;
+}
 
 /* menu en Desktop */
 
@@ -178,7 +183,6 @@ body {
   border-radius: 6px;
   padding: 20px 20px 0px;
   box-shadow: 2px 2px 2px 6px rgba(0, 0, 0, 0.05);
-  transition: .4s;
 }
 .desktop-menu__list {
   list-style: none;
