@@ -20,6 +20,10 @@ const cardsConstainer = document.querySelector('.card__container');
 
 const closeIcon = document.querySelector('.product-close');
 const productDetail = document.querySelector('#productDetail');
+const imgProductDetail = document.querySelector('.product-img');
+const priceProductDetail = document.querySelector('.product-info-price');
+const nameProductDetail = document.querySelector('.product-info-name');
+
 
 
 // Evento desktop menu
@@ -141,7 +145,11 @@ function renderProducts(arr) {
     const productImage = document.createElement('img');
     productImage.classList.add('card__image');
     productImage.setAttribute('src', product.img); //añade la url de la imagen declarada
-    productImage.addEventListener('click', openProductDetail);
+    // productImage.addEventListener('click', openProductDetail);
+    productImage.addEventListener('click', function(){
+      mostrarInfoProduct(product.img, product.price, product.name)
+      openProductDetail()
+  });
     
     const productInfo = document.createElement('div');
     productInfo.classList.add('card__info');
@@ -174,6 +182,11 @@ function renderProducts(arr) {
     
     cardsConstainer.appendChild(productCard);
   }
+}
+function mostrarInfoProduct(imagen, precio, nombre){
+  imgProductDetail.setAttribute('src', imagen)
+  priceProductDetail.innerText = '$' + precio
+  nameProductDetail.innerText = nombre
 }
 
 renderProducts(productList);
