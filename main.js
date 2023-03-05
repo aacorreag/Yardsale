@@ -14,7 +14,13 @@ const cartIcon = document.querySelector('.nav__cart');
 const asideCart = document.querySelector('#cartContainer');
 
 //variables container de las cards
-const cardsConstainer = document.querySelector('.card__container')
+const cardsConstainer = document.querySelector('.card__container');
+
+//variable del product deteil
+
+const closeIcon = document.querySelector('.product-close');
+const productDetail = document.querySelector('#productDetail');
+
 
 // Evento desktop menu
 
@@ -28,16 +34,22 @@ burguerIcon.addEventListener('click', toggleMobileMenu);
 
 cartIcon.addEventListener('click', toggleCartaside);
 
+//evento de prodcut detail
+
+closeIcon.addEventListener('click', closeProductDetail);
+
 //Función desktop menu
 function toggleDesktopMenu() {
   desktopMenu.classList.toggle('inactive');
   asideCart.classList.add('inactive');
+  productDetail.classList.add('inactive')
 }
 
 //Función mobile menu
 function toggleMobileMenu() {
   mobileMenu.classList.toggle('inactive');
   asideCart.classList.add('inactive');
+  productDetail.classList.add('inactive')
 }
 
 //función menu carrito de compras 
@@ -45,6 +57,17 @@ function toggleCartaside() {
   asideCart.classList.toggle('inactive');
   mobileMenu.classList.add('inactive');
   desktopMenu.classList.add('inactive');
+  productDetail.classList.add('inactive')
+}
+
+//función product detail
+function openProductDetail() {
+  productDetail.classList.remove('inactive');
+  asideCart.classList.add('inactive');
+  desktopMenu.classList.add('inactive');
+}
+function closeProductDetail() {
+  productDetail.classList.add('inactive')
 }
 
 // lista de Productos
@@ -118,6 +141,7 @@ function renderProducts(arr) {
     const productImage = document.createElement('img');
     productImage.classList.add('card__image');
     productImage.setAttribute('src', product.img); //añade la url de la imagen declarada
+    productImage.addEventListener('click', openProductDetail);
     
     const productInfo = document.createElement('div');
     productInfo.classList.add('card__info');
