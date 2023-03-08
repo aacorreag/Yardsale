@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
-    <title>YardSale: Tienda Online</title>
+    <title>Mi Cuenta</title>
   </head>
   <body>
     <!-- barra de navegación -->
@@ -21,7 +21,7 @@
         <img src="logos/logo_yard_sale.svg" alt="Logo" class="logo-nav" />
         <!-- Lista del navbar -->
         <ul class="nav__list nav__list--left">
-          <li class="nav__item"><a href="#" class="nav__link">Todo</a></li>
+          <li class="nav__item"><a href="index.html" class="nav__link">Todo</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Ropa</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Electronica</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Muebles</a></li>
@@ -180,7 +180,28 @@
       </div>  <!-- card__container -->
     </section>
 
+    <!--* Container de mi cuenta  -->
+    <section class="container">
+      <div action="" class="contents">
+        <h1 class="title title--left">Mi Cuenta</h1>
+        <form action="" class="form">
+          <div class="form__group">
+            <label for="name" class="form__label">Nombre</label>
+            <p class="value paragraph">Andres Correa</p>
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label">Correo Electronico</label>
+            <p class="value paragraph">name@example.com</p>
+          </div>
+          <div class="form__group">
+            <label for="password" class="form__label">Contraseña</label>
+            <p class="value paragraph">********</p>
+          </div>
+          <input type="submit" value="Editar" class="button button--white button--bottom">
+        </form>
+      </div>
+    </section>
 
-    <script src="main.js"></script>
+    <script src="miCuenta.js"></script>
   </body>
 </html>

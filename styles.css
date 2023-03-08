@@ -27,16 +27,16 @@ body {
 
 .container {
   display: grid;
+  justify-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 .contents {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: 90%;
   max-width: 300px;
-  height: 500px;
-  margin: auto;
   text-align: center;
 }
 .logo {
@@ -45,7 +45,7 @@ body {
   display: none;
 }
 .title {
-  margin-top: 30px;
+  margin-top: 0px;
   font-size: var(--lg);
   color: var(--color_dark);
 }
@@ -266,6 +266,10 @@ body {
 
 /* --------------sección mi orden----------------- */
 
+.myOrder {
+  display: flex;
+  justify-content: center;
+}
 .myOrder__title {
   font-size: var(--lg);
   margin-bottom: 40px;
